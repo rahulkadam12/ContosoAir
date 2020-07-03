@@ -11,7 +11,7 @@ steps:
     displayName: 'Run unit tests'
     continueOnError: true
   - task: PublishTestResults@2
-    displayName: 'Publish Test Results'
+    displayName: 'Publish Test Results-'
     condition: succeededOrFailed()
     inputs:
       testResultsFiles: $(System.DefaultWorkingDirectory)/test-report.xml
